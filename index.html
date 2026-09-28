@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión de Tareas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Sistema de Gestión de Tareas</h1>
+      <p class="subtitle">Universidad Tecnológica Fidel Velázquez - GDS 1001</p>
+    </header>
+
+    <main>
+      <!-- Formulario para agregar tareas -->
+      <section class="task-form-section">
+        <form id="task-form">
+          <input 
+            type="text" 
+            id="task-input" 
+            placeholder="Escribe una nueva tarea..." 
+            required 
+            autocomplete="off"
+          />
+          <button type="submit" id="add-btn">Agregar Tarea</button>
+        </form>
+      </section>
+
+      <!-- Contadores de estado -->
+      <section class="task-stats">
+        <div class="stat-card">
+          <span id="total-tasks">0</span>
+          <p>Totales</p>
+        </div>
+        <div class="stat-card">
+          <span id="completed-tasks">0</span>
+          <p>Completadas</p>
+        </div>
+      </section>
+
+      <!-- Lista de tareas -->
+      <section class="task-list-section">
+        <h2>Lista de Tareas</h2>
+        <ul id="task-list" class="task-list">
+          <!-- Las tareas se insertarán dinámicamente con JS -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Desarrollado por: Martinez Flores Julio & Osnaya Gomez Jose Angel</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
